@@ -5,7 +5,7 @@
       <h1 class="title">
         nuxt-sample
       </h1>
-      <h2 class="subtitle">
+      <h2 class=" text-xl">
         Play with nuxt
       </h2>
       <div class="links">
