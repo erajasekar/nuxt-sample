@@ -13,7 +13,9 @@
             </label>
           </div>
           <div class="md:w-2/3">
-            <input id="inline-full-name" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" type="text" value="Today">
+
+           <datetime type="datetime" v-model="dateTime"></datetime>
+        <!--     <input id="inline-full-name" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" v-model="dateTime" @change="calculate" type="text" > -->
           </div>
         </div>
 
@@ -42,15 +44,22 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
+import { Datetime } from 'vue-datetime'
 import Logo from '@/components/Logo.vue'
 
 @Component({
   components: {
-    Logo
+    Logo,
+    Datetime
   }
 })
-export default class Index extends Vue {}
+export default class Index extends Vue {
+  dateTime: string = ''
 
+  calculate () {
+    console.log(this.dateTime)
+  }
+}
 </script>
 
 <style>
