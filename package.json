@@ -16,7 +16,7 @@
     "@nuxt/typescript-runtime": "^0.3.2",
     "@nuxtjs/axios": "^5.3.6",
     "luxon": "^1.21.3",
-    "nuxt": "^2.11.0",
+    "nuxt": "^2.18.1",
     "nuxt-property-decorator": "^2.5.0",
     "vue-datetime": "^1.0.0-beta.11",
     "weekstart": "^1.0.1"
@@ -30,7 +30,7 @@
     "@vue/test-utils": "^1.0.0-beta.27",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.1.0",
-    "eslint": "^6.1.0",
+    "eslint": "^9.39.1",
     "eslint-plugin-nuxt": ">=0.4.2",
     "jest": "^24.1.0",
     "vue-jest": "^4.0.0-0"
